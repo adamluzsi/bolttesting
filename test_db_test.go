@@ -8,8 +8,8 @@ import (
 	"github.com/boltdb/bolt"
 )
 
-func TestSetUp(t *testing.T) {
-	db, teardown := SetUp(t)
+func TestCreateTestDB(t *testing.T) {
+	db, teardown := CreateTestDB(t)
 
 	path := db.Path()
 

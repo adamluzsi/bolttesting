@@ -7,8 +7,8 @@ import (
 	"github.com/boltdb/bolt"
 )
 
-// SetUp will create a database for the current test
-func SetUp(t testing.TB) (db *bolt.DB, teardown func()) {
+// CreateTestDB will create a database for the current test
+func CreateTestDB(t testing.TB) (db *bolt.DB, teardown func()) {
 
 	tmpdir, td := TempDir(t)
 	path := filepath.Join(tmpdir, "test.db")
