@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/LxDB/testing"
+	. "github.com/adamluzsi/testing"
 	"github.com/boltdb/bolt"
 )
 

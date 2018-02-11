@@ -3,7 +3,7 @@ package testing_test
 import (
 	"testing"
 
-	test "github.com/LxDB/testing"
+	test "github.com/adamluzsi/testing"
 )
 
 func TestTestEqIntsNotTheSame(t *testing.T) {
