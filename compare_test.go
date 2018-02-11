@@ -1,4 +1,4 @@
-package testing_test
+package bolttesting_test
 
 import (
 	"testing"

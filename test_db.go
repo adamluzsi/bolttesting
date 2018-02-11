@@ -1,4 +1,4 @@
-package testing
+package bolttesting
 
 import (
 	"path/filepath"
@@ -11,7 +11,8 @@ import (
 func CreateTestDB(t testing.TB) (db *bolt.DB, teardown func()) {
 
 	tmpdir, td := TempDir(t)
-	path := filepath.Join(tmpdir, "test.db")
+
+	path := filepath.Join(tmpdir, "bolt.db")
 	database, err := bolt.Open(path, 0600, nil)
 
 	if err != nil {

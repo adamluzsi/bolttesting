@@ -1,4 +1,4 @@
-package testing
+package bolttesting
 
 import (
 	"io/ioutil"
